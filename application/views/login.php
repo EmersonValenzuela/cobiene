@@ -12,7 +12,7 @@
     <link href="<?= base_url(); ?>/assets/node_modules/toast-master/css/jquery.toast.css" rel="stylesheet">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url(); ?>/assets/images/favicon.png">
-    <title>Elite Admin Template - The Ultimate Multipurpose admin template</title>
+    <title>COBIENE | Login</title>
 
     <!-- page css -->
     <link href="<?= base_url(); ?>/dist/css/pages/login-register-lock.css" rel="stylesheet">

@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url(); ?>/assets/images/favicon.png">
-    <title>Elite Admin Template - The Ultimate Multipurpose admin template</title>
+    <title>COBIENE</title>
 
     <!-- page css -->
     <link href="<?= base_url(); ?>/dist/css/pages/login-register-lock.css" rel="stylesheet">
