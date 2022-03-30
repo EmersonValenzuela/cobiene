@@ -15,7 +15,7 @@ class Dashboard extends CI_Controller {
 	public function index()
 	{
 		
-			$this->template->load('dace/template','dace/pages/home');
+			$this->load->view('dace/pages/go');
 		
 
 	}
