@@ -133,26 +133,26 @@
 
                         <li class="nav-small-cap">--- CONSULTAS DACE</li>
                         <li>
-                            <a class="waves-effect waves-dark" href="<?= base_url('DACE'); ?>" aria-expanded="false">
+                            <a class="waves-effect waves-dark" href="#" aria-expanded="false">
                                 <i class="ti-layout-media-right-alt"></i>
                                 <span class="hide-menu">Registros DACE</span>
                             </a>
                         </li>
                         <li>
-                            <a class="waves-effect waves-dark" href="<?= base_url(); ?>" aria-expanded="false">
+                            <a class="waves-effect waves-dark" href="<?= base_url('formulario-DACE'); ?>" aria-expanded="false">
                                 <i class="ti-layout-media-right-alt"></i>
                                 <span class="hide-menu">Formulario DACE</span>
                             </a>
                         </li>
                         <li class="nav-small-cap">--- CONSULTAS DAS</li>
-                        <li>
-                            <a class="waves-effect waves-dark" href="<?= base_url('DAS'); ?>" aria-expanded="false">
+                        <!--<li>
+                            <a class="waves-effect waves-dark" href="#" aria-expanded="false">
                                 <i class="ti-layout-media-right-alt"></i>
                                 <span class="hide-menu">Registros DAS</span>
                             </a>
                         </li>
                         <li>
-                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)"
+                            <a class="has-arrow waves-effect waves-dark" href=""
                                 aria-expanded="false">
                                 <i class="ti-files"></i>
                                 <span class="hide-menu">Formulario DAS
@@ -161,10 +161,10 @@
                             </a>
                             <ul aria-expanded="false" class="collapse">
                                 <li>
-                                    <a href="<?= base_url('hola'); ?>">Form 1</a>
+                                    <a href="#">Universidades</a>
                                 </li>
                                 <li>
-                                    <a href="<?= base_url('form1'); ?>">Form 1</a>
+                                    <a href="#">Form 1</a>
                                 </li>
                                 <li>
                                     <a href="#">Form 1</a>
@@ -174,7 +174,7 @@
                                 </li>
                                 
                             </ul>
-                        </li>
+                        </li>-->
 
                     </ul>
                 </nav>

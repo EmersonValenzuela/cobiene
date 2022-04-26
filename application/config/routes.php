@@ -59,9 +59,10 @@ $route['iniciar-sesion'] = 'site/login';
 $route['autenticacion/(:any)'] = 'site/authentication/$1';
 $route['admin'] = 'admin/dashboard';
 $route['cerrar-session'] = 'site/logout';
-$route['DACE'] = 'admin/dace';
-$route['DAS'] = 'admin/das';
-$route['hola'] = 'admin/das/form1';
+$route['formulario-DACE'] = 'admin/dace/formDace';
+$route['token/(:any)'] = 'site/token/$1';
+
+
 
 
 

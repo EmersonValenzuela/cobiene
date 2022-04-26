@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -76,7 +77,7 @@
                         <div class="form-group ">
                             <div class="col-xs-12">
                                 <input class="form-control" type="text" required="" id="verificationCode" placeholder="Ingresa el Codido de Verificación">
-                                <input class="" type="hidden" id="phone" value="<?= $phone_user ?>">
+                                <input type="hidden" id="phoneUser" value="<?= $this->encryption->encrypt($phone_user) ?>">
                             </div>
                         </div>
                         <div class=" form-group text-center m-t-20">

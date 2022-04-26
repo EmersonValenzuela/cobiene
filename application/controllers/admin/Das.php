@@ -20,6 +20,15 @@ class Das extends CI_Controller {
 		
 
 	}
+	
+	public function university()
+	{
+		
+		
+			$this->template->load('dace/template','dace/pages/dataDas');
+		
+
+	}
     	
 	public function form1()
 	{

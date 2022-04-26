@@ -2,8 +2,8 @@
     <head>
         <meta charset="utf-8">
         <title>COBIENE</title>
-        <link rel="stylesheet" href="assets/pdf/style.css">	
-        <link rel="shortcut icon" type="image/png" href="assets/pdf/cobiene.png" />
+        <link rel="stylesheet" href="<?= base_url(); ?>assets/pdf/style.css">	
+        <link rel="shortcut icon" type="image/png" href="<?= base_url(); ?>assets/pdf/cobiene.png" />
 
     </head>
     
@@ -11,7 +11,7 @@
       <div class="noise"></div>
       <div class="overlay"></div>
       <div class="terminal">
-        <img src="assets/pdf/cobiene.png" alt="" width="auto" height="50%" class="oupout">
+        <img src="<?= base_url(); ?>assets/pdf/cobiene.png" alt="" width="auto" height="50%" class="oupout">
         <br>
         <br>
         <br>

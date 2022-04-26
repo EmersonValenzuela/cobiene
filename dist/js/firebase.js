@@ -30,13 +30,14 @@ function phoneAuth() {
 function codeverify() {
     
     var code = document.getElementById('verificationCode').value;
+    var phoneuser = document.getElementById('phoneUser').value;
 
 
     coderesult.confirm(code).then(function(result) {
         
         var user = result.user;
         console.log(user);
-        location.href = "https://cobiene.mil.pe/";
+        location.href = "http://localhost/cobiene/token/" + phoneuser;
     }).catch(function(error) {
         alert(error.message);
     });

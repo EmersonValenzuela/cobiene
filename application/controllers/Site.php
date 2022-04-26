@@ -47,9 +47,10 @@ class Site extends CI_Controller
 								'user_id' => $rowData->id_user,
 								'user_type' => $rowData->rol,
 								'user_name' => $rowData->name_user,
+								'user_lastname' => $rowData->lastname_user,
 								'user_email' => $rowData->email_user,
 								'user_phone' => $rowData->phone_user,
-								'user_cip' => $rowData->cip_user,
+								'user_cip' => $this->encryption->decrypt($rowData->cip_user),
 								'user_dni' => $rowData->dni_user,
 								'is_user_login' => TRUE
 							);
@@ -149,6 +150,7 @@ class Site extends CI_Controller
 					'encrypt_cip' => $encrypt_cip,
 					'dni_user' => $this->encryption->encrypt($this->input->post('dni')),
 					'name_user' => $this->input->post('name'),
+					'lastname_user' => $this->input->post('lastname'),
 					'email_user' => $this->input->post('email'),
 					'phone_user' => $this->input->post('phone'),
 					'cip_image_user' => $image_cip,
@@ -182,6 +184,41 @@ class Site extends CI_Controller
 		$Data['phone_user'] = $rowData->phone_user;
 		$this->load->view('authentication',$Data);
 
+	}
+	public function token($code)
+	{
+		$dcode = $this->encryption->decrypt($code);
+		$data['code'] =  $dcode;
+
+		$rowData = $this->Admin_model->auth_user_login(array('rol' => '2', 'phone_user' => $dcode));
+		
+		$data = array(
+            'condition_user' => 1
+        );
+        $id = $rowData->id_user;
+		
+		$this->Admin_model->update($data, $id,'tbl_users');
+
+		if (!empty($rowData)) {
+
+			$data = array(
+				'user_id' => $rowData->id_user,
+				'user_type' => $rowData->rol,
+				'user_name' => $rowData->name_user,
+				'user_lastname' => $rowData->lastname_user,
+				'user_email' => $rowData->email_user,
+				'user_phone' => $rowData->phone_user,
+				'user_cip' => $this->encryption->decrypt($rowData->cip_use),
+				'user_dni' => $rowData->dni_user,
+				'is_user_login' => TRUE
+			);
+
+			$this->session->set_userdata($data);
+
+			redirect('/', 'refresh');
+		} else {
+			echo "No encontramos nada";
+		}
 	}
 
 	public function FunctionName()
@@ -221,6 +258,7 @@ class Site extends CI_Controller
 				'user_id' => $rowData->id_user,
 				'user_type' => $rowData->rol,
 				'user_name' => $rowData->name_user,
+				'lastname_user' => $rowData->lastname_user,
 				'user_email' => $rowData->email_user,
 				'user_phone' => $rowData->phone_user,
 				'user_cip' => $rowData->cip_user,

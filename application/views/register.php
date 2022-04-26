@@ -62,7 +62,8 @@
                     <fieldset>
                         <h2 class="fs-title">Datos Personales</h2>
                         <h3 class="fs-subtitle">Paso 2</h3>
-                        <input type="text" name="name" placeholder="Nombre y Apellidos" required />
+                        <input type="text" name="name" placeholder="Nombres" required />
+                        <input type="text" name="lastname" placeholder="Apellidos" required />
                         <input type="text" name="dni" placeholder="DNI" required id="dni" />
                         <div id="respuestadni"></div>
                         <input type="text" name="email" placeholder="Correo Electrónico" id="mail" />

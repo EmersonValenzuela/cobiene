@@ -16229,7 +16229,7 @@ progress {
 	color: #212529;
 	background-color: #fff;
 	background-clip: padding-box;
-	border: 1px solid #e9ecef;
+	border: 2px solid #C6C8CA;
 	appearance: none;
 	border-radius: 0.25rem;
 	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -16248,7 +16248,8 @@ progress {
 .form-control:focus {
 	color: #212529;
 	background-color: #fff;
-	border-color: rgba(0, 0, 0, 0.1);
+	border: 2px solid #D6D8DA;
+
 	outline: 0;
 	box-shadow: transparent;
 }
@@ -16397,7 +16398,7 @@ textarea.form-control-lg {
 	background-repeat: no-repeat;
 	background-position: right 0.75rem center;
 	background-size: 16px 12px;
-	border: 1px solid #e9ecef;
+	border: 2px solid #CFD2D5;
 	border-radius: 0.25rem;
 	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 	appearance: none;
@@ -18550,6 +18551,7 @@ fieldset:disabled .btn {
 .card-body {
 	flex: 1 1 auto;
 	padding: 1.25rem 1.25rem;
+	background: #fff;
 }
 .card-title {
 	margin-bottom: 0.75rem;
@@ -36433,7 +36435,7 @@ table th {
 	display: block;
 }
 .select2-container--default .select2-selection--single {
-	border-color: #e9ecef;
+	border-color: #CFD2D5;
 	height: 38px;
 }
 .select2-container--default
